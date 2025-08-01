@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zombie Profiles - Women</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .profile-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .profile-card img {
+      width: 40%;
+      border-radius: 15px;
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .toggle-btn {
+      background-color: #66040f;
+      color: #fff;
+      padding: 10px 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .interested-btn {
+      margin-top: 10px;
+      background: #a20a74;
+      color: white;
+      padding: 2px 5px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    nav .logo {
+      color: #a20a74;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="overlay"></div>
+  <nav>
+    <div class="logo">Love After Life</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="#">Find Couple</a></li>
+      <li><a href="#">Chat</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="center-content">
+      <div class="profile-card">
+        <img src="zombie-boy1.png" alt="Zombie boy 1">
+        <div class="profile-name">Shambler tington</div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">More Details</button>
+        <div class="dropdown-content">
+          <p>Likes: a relentless hunter, always on the lookout for his next meal. He's fast and agile, making him a formidable opponent.</p>
+          <p>Personality: Hopeless Romantic</p>
+        </div>
+        <a class="interested-btn" href="chat.html">Interested</a>
+      </div>
+
+      <div class="profile-card">
+        <img src="zombie-boy2.png" alt="Zombie Boy 2">
+        <div class="profile-name">Rotticus Digger</div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">More Details</button>
+        <div class="dropdown-content">
+          <p>Likes: a slow but determined zombie. He's been decaying for a long time and is covered in maggots.</p>
+          <p>Personality: Disgustingly cute</p>
+        </div>
+        <a class="interested-btn" href="chat.html">Interested</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleDetails(button) {
+      const content = button.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Love</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">Love After Life</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gender.html" class="find-now-button">Find Now</a></li>
+      <li><a href="#">Chat</a></li>
+    </ul>
+  </nav>
+
+  <section class="findlove-section">
+    <div class="image-container">
+      <img src="testtube.png" alt="Zombie Test Tubes" class="large-img">
+
+
+    </div>
+
+    <div class="text-content">
+      <h1><strong>Experience <span class="pink">Dating</span></strong><br>Like Never Before!</h1>
+      <p>
+        Experience dating like never before with our innovative app that makes finding meaningful connections easier and more exciting. Our advanced features and intuitive design ensure that every interaction feels fresh and engaging, so you can focus on what really matters—connecting with someone special.
+      </p>
+      
+      <div class="gender-select">
+  <label><input type="radio" name="gender" value="male"> Male</label>
+  <label><input type="radio" name="gender" value="female"> Female</label>
+  <label><input type="radio" name="gender" value="other"> Other</label>
+</div>
+
+<a href="#" class="find-now-button" id="findNow">Find Now</a>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("findNow").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const selectedGender = document.querySelector('input[name="gender"]:checked');
+      
+      if (!selectedGender) {
+        alert("Please select a gender first!");
+        return;
+      }
+
+      const gender = selectedGender.value;
+
+      if (gender === "male") {
+        window.location.href = "women.html";  // Shows female zombie profiles
+      } else if (gender === "female") {
+        window.location.href = "men.html";    // Shows male zombie profiles
+      } else {
+        window.location.href = "other.html";  // Optional: non-binary/other zombie profiles
+      }
+    });
+  </script>
+</body>
+</html>
