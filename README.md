@@ -138,7 +138,12 @@ For Hardware:
 
 ### Project Demo
 # Video
-Video.mp4 is uploaded in the file
+
+
+
+https://github.com/user-attachments/assets/6240aa6b-7f23-44e1-a401-4f1893aba0bd
+
+
 🧟‍♂️ Love After Life – Zombie Dating Web App 💘
 💡 What is it?
 "Love After Life" is a fun zombie dating website where users can:
